@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop With OWELEGO — Personal Shopper &amp; Errand Services in Lagos</title>
+<meta name="description" content="Personal shopper and errand services in Lagos. Send us your list — we source from trusted vendors, buy at fair prices and deliver across Lagos, Nigeria and abroad.">
+<meta name="theme-color" content="#FBF7EF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shop With OWELEGO — Personal Shopper &amp; Errand Services">
+<meta property="og:description" content="Send us your list. We source, buy and deliver — across Lagos, Nigeria and abroad.">
+<!-- After the site is hosted, change this to the full address, e.g. https://shopwithowelego.com/assets/og.jpg -->
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shop With OWELEGO","description":"Personal shopper and errand services in Lagos, Nigeria.","telephone":"+2348101502970","address":{"@type":"PostalAddress","addressLocality":"Lagos","addressCountry":"NG"},"areaServed":["Lagos Island","Lagos Mainland","Nigeria"],"priceRange":"₦5,000 – ₦70,000","sameAs":["https://www.tiktok.com/@shop_with_owelego"]}
+</script>
+<style>
+:root{
+  --red:#E00A0A;--red-ink:#C40909;--maroon:#3A0505;--maroon-2:#2A0404;
+  --green:#1E7B34;--green-dark:#165F28;--gold:#E8D870;
+  --cream:#FBF7EF;--paper:#F4EEE3;--ink:#171212;--muted:#5E5454;
+  --line:rgba(23,18,18,.14);--line-light:rgba(251,247,239,.16);
+  --serif:"Instrument Serif","Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.65;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--ink);color:var(--cream)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+@media(max-width:600px){.wrap{width:calc(100% - 32px)}}
+.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* Type */
+h1,h2,h3.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:.95}
+h1 em,h2 em{font-style:italic;color:var(--red)}
+h2{font-size:clamp(2.8rem,6.4vw,5.6rem)}
+.label{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.sec{padding:clamp(88px,12vw,160px) 0}
+.sec-top{display:grid;grid-template-columns:1fr 1.6fr;gap:2rem 4rem;align-items:end;margin-bottom:clamp(48px,7vw,88px)}
+.sec-top .label{align-self:start;padding-top:.8rem}
+.sec-top p{max-width:460px;margin-top:1.5rem;color:var(--muted)}
+@media(max-width:860px){.sec-top{grid-template-columns:1fr}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;height:54px;padding:0 1.6rem;border-radius:2px;font-size:.95rem;font-weight:500;letter-spacing:.01em;white-space:nowrap;transition:background-color .25s,color .25s,border-color .25s}
+.btn-wa{background:var(--green);color:#fff}
+.btn-wa:hover{background:var(--green-dark)}
+.btn-ink{background:var(--ink);color:var(--cream)}
+.btn-ink:hover{background:var(--red-ink)}
+.btn-line{border:1px solid currentColor}
+.btn-line:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.link{display:inline-flex;align-items:center;gap:.5rem;font-weight:500;border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .25s}
+.link:hover{color:var(--red-ink)}
+
+/* Header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;background:rgba(251,247,239,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr-in{height:76px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.brand{display:flex;align-items:center;gap:.6rem}
+.brand .ic{width:38px;height:38px}
+.brand .wm{height:28px;width:auto}
+.nav{display:flex;align-items:center;gap:2.2rem;font-size:.92rem}
+.nav a:not(.btn){color:var(--muted);transition:color .2s}
+.nav a:not(.btn):hover{color:var(--ink)}
+.nav .btn{height:44px;padding:0 1.2rem}
+.menu-btn{display:none;font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:960px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:.5rem 24px 1.5rem;background:var(--cream);border-bottom:1px solid var(--line)}
+  .hdr.open .nav{display:flex}
+  .nav a:not(.btn){padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.05rem;color:var(--ink)}
+  .nav .btn{margin-top:1.2rem;height:52px}
+}
+
+/* Hero */
+.hero{padding:clamp(120px,13vw,150px) 0 0}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
+.hero h1{font-size:clamp(3.6rem,8.2vw,8rem);margin:1.6rem 0 2rem}
+.hero .lead{max-width:500px;font-size:1.15rem;color:var(--muted)}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:1.6rem 2rem;margin-top:2.6rem}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:min(620px,calc(100vh - 210px));min-height:380px;object-fit:cover;object-position:50% 30%}
+.hero-img figcaption{display:flex;justify-content:space-between;margin-top:.9rem;font-size:.8rem;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(64px,9vw,120px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:2rem 0}
+.facts div + div{padding-left:2rem;border-left:1px solid var(--line)}
+.facts strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.4vw,3rem);line-height:1}
+.facts span{display:block;margin-top:.5rem;font-size:.85rem;color:var(--muted)}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-img{max-width:520px}
+  .facts{grid-template-columns:1fr}
+  .facts div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .facts div{padding:1.4rem 0}
+}
+
+/* Services */
+.svc-list{list-style:none;border-top:1px solid var(--line)}
+.svc-list li{display:grid;grid-template-columns:80px 1.1fr 1fr;gap:1rem 2rem;align-items:baseline;padding:2.2rem 0;border-bottom:1px solid var(--line)}
+.svc-list .n{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.svc-list h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.05;letter-spacing:-.01em;transition:color .25s}
+.svc-list li:hover h3{color:var(--red-ink)}
+.svc-list p{color:var(--muted);max-width:440px}
+@media(max-width:760px){.svc-list li{grid-template-columns:44px 1fr}.svc-list p{grid-column:2}}
+
+/* Process */
+.process{background:var(--paper)}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem}
+.steps li{padding-top:1.6rem;border-top:1px solid var(--ink)}
+.steps .num{display:block;font-family:var(--serif);font-size:clamp(3.5rem,6vw,5rem);line-height:1;color:var(--red)}
+.steps h3{margin:1.4rem 0 .6rem;font-size:1.05rem;font-weight:600}
+.steps p{font-size:.95rem;color:var(--muted)}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr);row-gap:3.5rem}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* Packages */
+.dark{background:var(--maroon);color:var(--cream)}
+.dark .label{color:rgba(251,247,239,.6)}
+.dark h2 em{color:var(--gold)}
+.dark .sec-top p{color:rgba(251,247,239,.7)}
+.pk-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-light);border-bottom:1px solid var(--line-light)}
+.pk{display:flex;flex-direction:column;padding:2.4rem 2rem 2.2rem}
+.pk + .pk{border-left:1px solid var(--line-light)}
+.pk:first-child{padding-left:0}
+.pk:last-child{padding-right:0}
+.pk-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.pk .dur{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,247,239,.6)}
+.pk .tag{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.pk h3{margin:1.6rem 0 .3rem;font-size:1.05rem;font-weight:600}
+.pk .for{min-height:3em;font-size:.9rem;line-height:1.5;color:rgba(251,247,239,.65)}
+.price{margin:1.8rem 0 .4rem;font-family:var(--serif);font-size:clamp(3rem,4.4vw,4.2rem);line-height:1;letter-spacing:-.02em}
+.price span{font-size:.55em;vertical-align:.32em;margin-right:.06em}
+.save{font-size:.82rem;color:var(--gold)}
+.pk ul{flex:1;list-style:none;margin:1.8rem 0 2.2rem;font-size:.92rem;color:rgba(251,247,239,.8)}
+.pk li{padding:.65rem 0;border-top:1px solid var(--line-light)}
+.pk li.no{color:rgba(251,247,239,.45)}
+.pk .btn{width:100%;border-color:rgba(251,247,239,.45)}
+.pk .btn:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.pk-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem 3rem;margin-top:3rem;font-size:.88rem;color:rgba(251,247,239,.65)}
+.pk-foot ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem 2.2rem}
+.pk-foot li::before{content:"— ";color:var(--gold)}
+.sub{display:grid;grid-template-columns:1fr auto;gap:1.5rem 3rem;align-items:center;margin-top:clamp(56px,7vw,88px);padding-top:clamp(40px,5vw,56px);border-top:1px solid var(--line-light)}
+.sub h3{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.05}
+.sub p{max-width:560px;margin-top:.8rem;color:rgba(251,247,239,.7)}
+.sub .link{color:var(--cream)}
+.sub .link:hover{color:var(--gold)}
+@media(max-width:1060px){.pk-grid{grid-template-columns:repeat(2,1fr)}.pk:nth-child(3){border-left:0;padding-left:0;border-top:1px solid var(--line-light)}.pk:nth-child(2){padding-right:0}.pk:nth-child(4){border-top:1px solid var(--line-light)}}
+@media(max-width:620px){.pk-grid{grid-template-columns:1fr}.pk{padding:2.2rem 0!important;border-left:0!important}.pk + .pk{border-top:1px solid var(--line-light)}.sub{grid-template-columns:1fr}}
+
+/* Reviews */
+.feature{max-width:1040px}
+.feature blockquote{font-family:var(--serif);font-size:clamp(2rem,4.2vw,3.6rem);line-height:1.12;letter-spacing:-.01em}
+.feature cite,.quotes cite{display:block;margin-top:1.6rem;font-family:var(--sans);font-style:normal;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;margin-top:clamp(64px,8vw,104px);padding-top:3rem;border-top:1px solid var(--line)}
+.quotes blockquote p{font-size:1rem;color:var(--ink)}
+@media(max-width:860px){.quotes{grid-template-columns:1fr;gap:2.6rem}}
+
+/* About */
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2.5rem,7vw,7rem);align-items:center}
+.about-grid img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-copy h2{margin:1.4rem 0 2rem}
+.about-copy > p{max-width:540px;color:var(--muted);font-size:1.05rem}
+.about-copy > p + p{margin-top:1rem}
+.about-copy strong{color:var(--ink);font-weight:600}
+.vm{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem;padding-top:2.2rem;border-top:1px solid var(--line)}
+.vm h3{margin-bottom:.6rem}
+.vm p{font-size:.93rem;color:var(--muted)}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}.about-grid figure{max-width:480px}.vm{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:1.7rem 0;list-style:none;cursor:pointer;font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,1.9rem);line-height:1.2}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .i{width:22px;height:22px;transition:transform .3s}
+.faq details[open] summary .i{transform:rotate(45deg)}
+.faq .ans{max-width:680px;padding:0 0 1.8rem;color:var(--muted)}
+.faq .ans a{color:var(--ink);border-bottom:1px solid currentColor}
+
+/* Contact */
+.contact h2{font-size:clamp(3.2rem,9vw,8.5rem)}
+.contact .intro{max-width:520px;margin:2rem 0 clamp(56px,7vw,88px);font-size:1.15rem;color:var(--muted)}
+.channels{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.channel{display:flex;flex-direction:column;gap:.4rem;padding:2.2rem 2rem 2.4rem 0;transition:color .25s}
+.channel + .channel{padding-left:2rem;border-left:1px solid var(--line)}
+.channel .label{display:flex;align-items:center;gap:.5rem}
+.channel strong{margin-top:1.4rem;font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,2.8vw,2.5rem);line-height:1.1}
+.channel small{font-size:.9rem;color:var(--muted)}
+.channel .go{margin-top:1.6rem;display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:500}
+.channel .go .i{transition:transform .25s}
+.channel:hover strong{color:var(--red-ink)}
+.channel:hover .go .i{transform:translateX(4px)}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1rem;padding-top:2rem;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
+.info b{display:block;margin-bottom:.3rem;color:var(--ink);font-weight:600}
+@media(max-width:860px){.channels,.info{grid-template-columns:1fr}.channel{padding-right:0}.channel + .channel{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* Footer */
+.ftr{padding:3rem 0;background:var(--maroon-2);color:rgba(251,247,239,.6);font-size:.85rem}
+.ftr-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem}
+.ftr img{width:150px}
+.ftr nav{display:flex;flex-wrap:wrap;gap:.5rem 1.8rem}
+.ftr a:hover{color:var(--cream)}
+
+/* One quiet entrance as sections scroll into view */
+.js [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.split .w>span{display:inline-block;transform:translateY(105%);transition:transform 1.1s cubic-bezier(.19,1,.22,1) calc(var(--i)*70ms)}
+.split.in .w>span{transform:none}
+@media (prefers-reduced-motion:reduce){.js [data-reveal]{opacity:1;transform:none;transition:none}.split .w>span{transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.6 20.4l1.2-4.1A8.6 8.6 0 1 1 8 19.3z"/><path fill="currentColor" stroke="none" d="M9.1 7.6c.3-.1.6 0 .7.3l.9 1.9c.1.3 0 .6-.2.8l-.6.6c.5 1.2 1.6 2.3 2.8 2.8l.6-.6c.2-.2.5-.3.8-.2l1.9.9c.3.1.4.4.3.7-.3 1.1-1.3 1.8-2.4 1.6-2.9-.6-5.1-2.8-5.7-5.7-.2-1.1.5-2.1 1.6-2.4z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11a3.7 3.7 0 1 1-3.7-3.7"/><path d="M14 3.5c.5 2.6 2.2 4.3 4.8 4.6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+</svg>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Shop With OWELEGO, back to top">
+      <img class="ic" src="assets/icon.png" alt="" width="38" height="38">
+      <img class="wm" src="assets/wordmark.png" alt="Shop With OWELEGO">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#packages">Packages</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a class="btn btn-ink" href="#contact">Contact us</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="label">Personal shopper &amp; errand services — Lagos</p>
+          <h1>Your market run, <em>handled.</em></h1>
+          <p class="lead">Send us your list. We source from trusted vendors, buy at fair prices and deliver to your door — across Lagos, Nigeria and abroad.</p>
+          <div class="hero-cta">
+            <a class="btn btn-wa" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to send you my shopping list."><svg class="i"><use href="#i-wa"/></svg>Send your list on WhatsApp</a>
+            <a class="link" href="#packages">View packages <svg class="i"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <figure class="hero-img">
+          <img src="assets/portrait-hero.jpg" alt="Smiling person in a red Shop With OWELEGO T-shirt" width="880" height="1100" fetchpriority="high">
+          <figcaption><span>Shop With OWELEGO</span><span>Lagos, Nigeria</span></figcaption>
+        </figure>
+      </div>
+      <div class="facts">
+        <div><strong>50+</strong><span>Clients served in Lagos, Nigeria and abroad</span></div>
+        <div><strong>Island &amp; Mainland</strong><span>Any location, every market</span></div>
+        <div><strong>Every day</strong><span>Available on weekdays and weekends</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="sec-top" data-reveal>
+        <p class="label">Services</p>
+        <div>
+          <h2>Everything on your list, <em>sourced with care.</em></h2>
+          <p>We know the markets, the vendors and the prices — so you don't have to spend the day finding them.</p>
+        </div>
+      </div>
+      <ol class="svc-list" data-reveal>
+        <li><span class="n">01</span><h3>Personal shopping &amp; market guide</h3><p>We shop on your behalf, or walk the market with you, and know where to find quality at the right price.</p></li>
+        <li><span class="n">02</span><h3>Household shopping</h3><p>Toiletries, cleaning supplies and kitchen staples — your home restocked in one trip.</p></li>
+        <li><span class="n">03</span><h3>Groceries &amp; accessories</h3><p>Fresh produce, foodstuff and everyday essentials, picked as carefully as we would for our own kitchen.</p></li>
+        <li><span class="n">04</span><h3>Fashion items &amp; souvenirs</h3><p>Fabrics, accessories and gifts, sourced for your events or to send abroad.</p></li>
+        <li><span class="n">05</span><h3>Cosmetics &amp; beauty products</h3><p>Skincare, makeup and natural beauty products from vendors we trust.</p></li>
+        <li><span class="n">06</span><h3>Wholesale product sourcing</h3><p>Restocking a shop or running a large project? We source in bulk at market prices.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec process" id="process">
+    <div class="wrap">
+      <div class="sec-top" data-reveal>
+        <p class="label">How it works</p>
+        <h2>Four steps from your list <em>to your door.</em></h2>
+      </div>
+      <ol class="steps" data-reveal>
+        <li><span class="num">01</span><h3>Send us your list</h3><p>Message us on WhatsApp or TikTok with what you need and where you are.</p></li>
+        <li><span class="num">02</span><h3>We source your items</h3><p>We compare trusted vendors to find quality items at great prices.</p></li>
+        <li><span class="num">03</span><h3>We buy the listed items</h3><p>Once payment confirms your booking, we shop exactly what's on your list.</p></li>
+        <li><span class="num">04</span><h3>We deliver to you</h3><p>Everything is packed with care and delivered to your location, near or far.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec dark" id="packages">
+    <div class="wrap">
+      <div class="sec-top" data-reveal>
+        <p class="label">Packages</p>
+        <div>
+          <h2>Clear prices. <em>No surprises.</em></h2>
+          <p>Choose the package that fits your list. Not sure which one? Send us your list and we'll advise.</p>
+        </div>
+      </div>
+      <div class="pk-grid" data-reveal>
+        <article class="pk">
+          <div class="pk-head"><span class="dur">One market</span></div>
+          <h3>Basic Shopping</h3>
+          <p class="for">A quick, simple run</p>
+          <p class="price"><span>₦</span>5,000</p>
+          <ul>
+            <li>One market or location only</li>
+            <li>A few simple items</li>
+            <li class="no">Not for bulk purchases</li>
+            <li class="no">Not valid for multiple markets</li>
+          </ul>
+          <a class="btn btn-line" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to book the Basic Shopping package (₦5,000). Here is my list:">Book on WhatsApp</a>
+        </article>
+        <article class="pk">
+          <div class="pk-head"><span class="dur">Up to 4 hours</span></div>
+          <h3>Half-Day Shopping</h3>
+          <p class="for">For medium-sized lists</p>
+          <p class="price"><span>₦</span>15,000</p>
+          <ul>
+            <li>Moderate shopping</li>
+            <li>Multiple items within the agreed time</li>
+            <li>Suits medium-sized shopping lists</li>
+          </ul>
+          <a class="btn btn-line" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to book the Half-Day Shopping package (₦15,000). Here is my list:">Book on WhatsApp</a>
+        </article>
+        <article class="pk">
+          <div class="pk-head"><span class="dur">Up to 7 hours</span></div>
+          <h3>Full-Day Shopping</h3>
+          <p class="for">For bulk and detailed lists</p>
+          <p class="price"><span>₦</span>25,000</p>
+          <ul>
+            <li>Bulk shopping</li>
+            <li>Multiple product categories</li>
+            <li>More detailed shopping lists</li>
+          </ul>
+          <a class="btn btn-line" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to book the Full-Day Shopping package (₦25,000). Here is my list:">Book on WhatsApp</a>
+        </article>
+        <article class="pk">
+          <div class="pk-head"><span class="dur">3 consecutive days</span><span class="tag">Best value</span></div>
+          <h3>3-Day Shopping</h3>
+          <p class="for">Relocation, restocking and large projects</p>
+          <p class="price"><span>₦</span>70,000</p>
+          <ul>
+            <li class="save">₦5,000 less than three full days</li>
+            <li>Bulk purchases</li>
+            <li>Detailed shopping list</li>
+            <li>Multiple markets, as agreed</li>
+          </ul>
+          <a class="btn btn-line" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to book the 3-Day Shopping package (₦70,000). Here is what I need:">Book on WhatsApp</a>
+        </article>
+      </div>
+      <div class="pk-foot">
+        <ul>
+          <li>Payment confirms your booking</li>
+          <li>Delivery fees are charged separately</li>
+          <li>Service charge does not include transport</li>
+        </ul>
+      </div>
+      <div class="sub" data-reveal>
+        <div>
+          <p class="label">Monthly subscription</p>
+          <h3 style="margin-top:1rem">Your essentials, restocked every month.</h3>
+          <p>Book a monthly shopping subscription and we'll keep your home stocked, so you never have to think about it.</p>
+        </div>
+        <a class="link" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to know more about the monthly shopping subscription.">Ask about subscriptions <svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="reviews">
+    <div class="wrap">
+      <div class="sec-top" data-reveal>
+        <p class="label">Reviews</p>
+        <h2>In our clients' <em>own words.</em></h2>
+      </div>
+      <figure class="feature" data-reveal>
+        <blockquote>“Thank you for being honest, transparent and very reliable. You have really helped me with my business over here in Cameroon. I will recommend you any day, any time.”</blockquote>
+        <figcaption><cite>Client in Cameroon</cite></figcaption>
+      </figure>
+      <div class="quotes" data-reveal>
+        <blockquote><p>“I honestly can't thank you enough for the immense help you gave me. It wasn't an easy ride, but with you by my side these two weeks, the struggle and stress ended up being a success because of you.”</p><cite>Client</cite></blockquote>
+        <blockquote><p>“Shop With OWELEGO is the number one ‘made easy’ shopping from Naija. She never disappoints and has always been the plug.”</p><cite>Returning client</cite></blockquote>
+        <blockquote><p>“I've received my items and I absolutely love them. Everything is beautiful and exactly what I wanted. Thank you so much.”</p><cite>Client</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec about" id="about">
+    <div class="wrap about-grid">
+      <figure data-reveal><img src="assets/portrait-about.jpg" alt="Person in a red Shop With OWELEGO T-shirt" width="720" height="900" loading="lazy"></figure>
+      <div class="about-copy" data-reveal>
+        <p class="label">About</p>
+        <h2>Shopping, <em>made easy.</em></h2>
+        <p>Shop With OWELEGO is a personal shopper and errand service built on one promise: <strong>you send the list, we handle the rest</strong> — the walking, the comparing, the bargaining and the carrying.</p>
+        <p>Every list is shopped as if it were for our own home: carefully, honestly and at a fair price, whether you are in Lagos, elsewhere in Nigeria or abroad.</p>
+        <div class="vm">
+          <div><h3 class="label">Vision</h3><p>To build Shop With OWELEGO into a well-known, trusted brand, recognised for customer satisfaction and excellence, while expanding into more services.</p></div>
+          <div><h3 class="label">Mission</h3><p>To reduce shopping stress by helping clients plan, shop, pack and deliver their market needs with care, so every customer feels relaxed, valued and satisfied.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-top" data-reveal>
+        <p class="label">Questions</p>
+        <h2>Good to <em>know.</em></h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details><summary>How do I place an order?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Send your list on <a href="https://wa.me/2347011951973" data-wa>WhatsApp</a> or a DM on <a href="https://www.tiktok.com/@shop_with_owelego" target="_blank" rel="noopener">TikTok</a>. We confirm the details, you make payment, and we go shopping.</p></details>
+        <details><summary>When do I pay?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Payment confirms your booking. Once it is received, we head to the market and buy exactly what is on your list.</p></details>
+        <details><summary>Is delivery included in the package price?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">No. Delivery fees are charged separately and depend on your location. The service charge also does not include transport.</p></details>
+        <details><summary>Which areas do you cover?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Any location and every market in Lagos, on the Island and the Mainland. We also deliver within and outside Nigeria.</p></details>
+        <details><summary>I live abroad. Can you still shop for me?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Yes. We serve local and international clients. Send your list and tell us where it is going.</p></details>
+        <details><summary>Which package should I choose?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Basic suits a few simple items from one market. Half-Day (up to 4 hours) suits a medium list, Full-Day (up to 7 hours) suits bulk or detailed lists, and 3-Day is for relocations, store restocking and large projects. If you're unsure, send your list and we'll advise.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec process contact" id="contact">
+    <div class="wrap">
+      <p class="label" data-reveal>Contact</p>
+      <h2 style="margin-top:1.4rem">Tell us what <em>you need.</em></h2>
+      <p class="intro" data-reveal>Send your list, ask about a package or book a monthly subscription. We'll take it from there.</p>
+      <div class="channels" data-reveal>
+        <a class="channel" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to make an enquiry.">
+          <span class="label"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span>
+          <strong>+234 701 195 1973</strong>
+          <small>Send your list or ask a question</small>
+          <span class="go">Start a chat <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel" href="tel:+2348101502970">
+          <span class="label"><svg class="i"><use href="#i-phone"/></svg>Phone</span>
+          <strong>+234 810 150 2970</strong>
+          <small>Speak with us directly</small>
+          <span class="go">Call now <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel" href="https://www.tiktok.com/@shop_with_owelego" target="_blank" rel="noopener">
+          <span class="label"><svg class="i"><use href="#i-tiktok"/></svg>TikTok</span>
+          <strong>@shop_with_owelego</strong>
+          <small>Follow along or send a DM</small>
+          <span class="go">Visit profile <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+      <div class="info" data-reveal>
+        <p><b>Service areas</b>Lagos Island, Lagos Mainland, and delivery within and outside Nigeria</p>
+        <p><b>Availability</b>Weekdays and weekends</p>
+        <p><b>Payment</b>Payment confirms your booking; delivery is charged separately</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <img src="assets/logo-white.png" alt="Shop With OWELEGO — Personal Shopper &amp; Errand Services" loading="lazy">
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span>© <span id="year">2026</span> Shop With OWELEGO</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(() => {
+  const wa = msg => 'https://wa.me/2347011951973?text=' + encodeURIComponent(msg);
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    a.href = wa(a.dataset.wa || "Hello Shop With OWELEGO! I'd like to make an enquiry.");
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  const hdr = document.querySelector('.hdr'), menuBtn = document.querySelector('.menu-btn');
+  const onScroll = () => hdr.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const setMenu = open => {
+    hdr.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.textContent = open ? 'Close' : 'Menu';
+  };
+  menuBtn.addEventListener('click', () => setMenu(!hdr.classList.contains('open')));
+  document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // Smooth scrolling (skipped for reduced motion or if the library failed to load)
+  if (window.Lenis && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+    const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+    requestAnimationFrame(raf);
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const id = a.getAttribute('href'), el = id === '#top' ? 0 : document.querySelector(id);
+      if (el === null) return;
+      e.preventDefault();
+      lenis.scrollTo(el, { offset: el === 0 ? 0 : -80 });
+      history.replaceState(null, '', id);
+    }));
+  }
+
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+
+  // Headings: each word rises out of a mask, one after another
+  document.querySelectorAll('h1, h2').forEach(h => {
+    let i = 0;
+    const walk = node => [...node.childNodes].forEach(n => {
+      if (n.nodeType === 1) return walk(n);
+      const frag = document.createDocumentFragment();
+      n.textContent.split(/(\s+)/).forEach(part => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) return frag.append(part);
+        const w = document.createElement('span'), inner = document.createElement('span');
+        w.className = 'w'; inner.textContent = part; inner.style.setProperty('--i', i++);
+        w.append(inner); frag.append(w);
+      });
+      n.replaceWith(frag);
+    });
+    walk(h);
+    h.classList.add('split');
+    io.observe(h);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
