@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shop With OWELEGO","description":"Personal shopper and errand services in Lagos, Nigeria.","telephone":"+2348101502970","address":{"@type":"PostalAddress","addressLocality":"Lagos","addressCountry":"NG"},"areaServed":["Lagos Island","Lagos Mainland","Nigeria"],"priceRange":"₦5,000 – ₦70,000","sameAs":["https://www.tiktok.com/@shop_with_owelego"]}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Shop With OWELEGO","description":"Personal shopper and errand services in Lagos, Nigeria.","telephone":"+2348101502970","address":{"@type":"PostalAddress","addressLocality":"Lagos","addressCountry":"NG"},"areaServed":["Lagos Island","Lagos Mainland","Nigeria"],"priceRange":"₦5,000 – ₦70,000","sameAs":["https://www.instagram.com/shopwithowelego","https://www.facebook.com/share/1VV23ZL5Y7/","https://www.tiktok.com/@owelego"]}
 </script>
 <style>
 :root{
@@ -194,6 +194,9 @@ h2{font-size:clamp(2.8rem,6.4vw,5.6rem)}
 .contact h2{font-size:clamp(3.2rem,9vw,8.5rem)}
 .contact .intro{max-width:520px;margin:2rem 0 clamp(56px,7vw,88px);font-size:1.15rem;color:var(--muted)}
 .channels{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.channels.two{grid-template-columns:repeat(2,1fr)}
+.follow{margin-top:3rem}
+.follow > .label{margin-bottom:1rem}
 .channel{display:flex;flex-direction:column;gap:.4rem;padding:2.2rem 2rem 2.4rem 0;transition:color .25s}
 .channel + .channel{padding-left:2rem;border-left:1px solid var(--line)}
 .channel .label{display:flex;align-items:center;gap:.5rem}
@@ -205,7 +208,7 @@ h2{font-size:clamp(2.8rem,6.4vw,5.6rem)}
 .channel:hover .go .i{transform:translateX(4px)}
 .info{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:1rem;padding-top:2rem;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
 .info b{display:block;margin-bottom:.3rem;color:var(--ink);font-weight:600}
-@media(max-width:860px){.channels,.info{grid-template-columns:1fr}.channel{padding-right:0}.channel + .channel{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:860px){.channels,.channels.two,.info{grid-template-columns:1fr}.channel{padding-right:0}.channel + .channel{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
 
 /* Footer */
 .ftr{padding:3rem 0;background:var(--maroon-2);color:rgba(251,247,239,.6);font-size:.85rem}
@@ -213,6 +216,8 @@ h2{font-size:clamp(2.8rem,6.4vw,5.6rem)}
 .ftr img{width:150px}
 .ftr nav{display:flex;flex-wrap:wrap;gap:.5rem 1.8rem}
 .ftr a:hover{color:var(--cream)}
+.ftr .social{display:flex;gap:1.1rem}
+.ftr .social .i{width:22px;height:22px}
 
 /* One quiet entrance as sections scroll into view */
 .js [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
@@ -230,6 +235,8 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.6 20.4l1.2-4.1A8.6 8.6 0 1 1 8 19.3z"/><path fill="currentColor" stroke="none" d="M9.1 7.6c.3-.1.6 0 .7.3l.9 1.9c.1.3 0 .6-.2.8l-.6.6c.5 1.2 1.6 2.3 2.8 2.8l.6-.6c.2-.2.5-.3.8-.2l1.9.9c.3.1.4.4.3.7-.3 1.1-1.3 1.8-2.4 1.6-2.9-.6-5.1-2.8-5.7-5.7-.2-1.1.5-2.1 1.6-2.4z"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11a3.7 3.7 0 1 1-3.7-3.7"/><path d="M14 3.5c.5 2.6 2.2 4.3 4.8 4.6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.9"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14.5 3.5h-1.8A3.7 3.7 0 0 0 9 7.2v2.6H6.8v3.3H9v7.4h3.3v-7.4h2.4l.5-3.3h-2.9V7.6c0-.6.4-1 1-1h1.2z"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
 </svg>
@@ -305,7 +312,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
         <h2>Four steps from your list <em>to your door.</em></h2>
       </div>
       <ol class="steps" data-reveal>
-        <li><span class="num">01</span><h3>Send us your list</h3><p>Message us on WhatsApp or TikTok with what you need and where you are.</p></li>
+        <li><span class="num">01</span><h3>Send us your list</h3><p>Message us on WhatsApp, Instagram or TikTok with what you need and where you are.</p></li>
         <li><span class="num">02</span><h3>We source your items</h3><p>We compare trusted vendors to find quality items at great prices.</p></li>
         <li><span class="num">03</span><h3>We buy the listed items</h3><p>Once payment confirms your booking, we shop exactly what's on your list.</p></li>
         <li><span class="num">04</span><h3>We deliver to you</h3><p>Everything is packed with care and delivered to your location, near or far.</p></li>
@@ -433,7 +440,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
         <h2>Good to <em>know.</em></h2>
       </div>
       <div class="faq" data-reveal>
-        <details><summary>How do I place an order?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Send your list on <a href="https://wa.me/2347011951973" data-wa>WhatsApp</a> or a DM on <a href="https://www.tiktok.com/@shop_with_owelego" target="_blank" rel="noopener">TikTok</a>. We confirm the details, you make payment, and we go shopping.</p></details>
+        <details><summary>How do I place an order?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Send your list on <a href="https://wa.me/2347011951973" data-wa>WhatsApp</a> or a DM on <a href="https://www.instagram.com/shopwithowelego" target="_blank" rel="noopener">Instagram</a> or <a href="https://www.tiktok.com/@owelego" target="_blank" rel="noopener">TikTok</a>. We confirm the details, you make payment, and we go shopping.</p></details>
         <details><summary>When do I pay?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Payment confirms your booking. Once it is received, we head to the market and buy exactly what is on your list.</p></details>
         <details><summary>Is delivery included in the package price?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">No. Delivery fees are charged separately and depend on your location. The service charge also does not include transport.</p></details>
         <details><summary>Which areas do you cover?<svg class="i"><use href="#i-plus"/></svg></summary><p class="ans">Any location and every market in Lagos, on the Island and the Mainland. We also deliver within and outside Nigeria.</p></details>
@@ -448,7 +455,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
       <p class="label" data-reveal>Contact</p>
       <h2 style="margin-top:1.4rem">Tell us what <em>you need.</em></h2>
       <p class="intro" data-reveal>Send your list, ask about a package or book a monthly subscription. We'll take it from there.</p>
-      <div class="channels" data-reveal>
+      <div class="channels two" data-reveal>
         <a class="channel" href="https://wa.me/2347011951973" data-wa="Hello Shop With OWELEGO! I'd like to make an enquiry.">
           <span class="label"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span>
           <strong>+234 701 195 1973</strong>
@@ -461,12 +468,29 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
           <small>Speak with us directly</small>
           <span class="go">Call now <svg class="i"><use href="#i-arrow"/></svg></span>
         </a>
-        <a class="channel" href="https://www.tiktok.com/@shop_with_owelego" target="_blank" rel="noopener">
-          <span class="label"><svg class="i"><use href="#i-tiktok"/></svg>TikTok</span>
-          <strong>@shop_with_owelego</strong>
-          <small>Follow along or send a DM</small>
-          <span class="go">Visit profile <svg class="i"><use href="#i-arrow"/></svg></span>
-        </a>
+      </div>
+      <div class="follow" data-reveal>
+        <p class="label">Follow us</p>
+        <div class="channels">
+          <a class="channel" href="https://www.instagram.com/shopwithowelego" target="_blank" rel="noopener">
+            <span class="label"><svg class="i"><use href="#i-ig"/></svg>Instagram</span>
+            <strong>@shopwithowelego</strong>
+            <small>Hauls, finds and DMs</small>
+            <span class="go">Visit profile <svg class="i"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="channel" href="https://www.facebook.com/share/1VV23ZL5Y7/" target="_blank" rel="noopener">
+            <span class="label"><svg class="i"><use href="#i-fb"/></svg>Facebook</span>
+            <strong>Shop With OWELEGO</strong>
+            <small>Updates and messages</small>
+            <span class="go">Visit page <svg class="i"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="channel" href="https://www.tiktok.com/@owelego" target="_blank" rel="noopener">
+            <span class="label"><svg class="i"><use href="#i-tiktok"/></svg>TikTok</span>
+            <strong>@owelego</strong>
+            <small>Follow along or send a DM</small>
+            <span class="go">Visit profile <svg class="i"><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
       </div>
       <div class="info" data-reveal>
         <p><b>Service areas</b>Lagos Island, Lagos Mainland, and delivery within and outside Nigeria</p>
@@ -485,6 +509,11 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
       <a href="#packages">Packages</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
+    </nav>
+    <nav class="social" aria-label="Social">
+      <a href="https://www.instagram.com/shopwithowelego" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-ig"/></svg></a>
+      <a href="https://www.facebook.com/share/1VV23ZL5Y7/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#i-fb"/></svg></a>
+      <a href="https://www.tiktok.com/@owelego" target="_blank" rel="noopener" aria-label="TikTok"><svg class="i"><use href="#i-tiktok"/></svg></a>
     </nav>
     <span>© <span id="year">2026</span> Shop With OWELEGO</span>
   </div>
